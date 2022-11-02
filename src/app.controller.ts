@@ -5,7 +5,7 @@ import { AppService } from './app.service';
 export class AppController {
   constructor(private readonly appService: AppService) {}
 
-  @Get()
+  @Get('/mock-server')
   getHello(): string {
     // const ping =
     return this.appService.getHello();
